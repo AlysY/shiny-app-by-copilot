@@ -37,7 +37,7 @@ ui <- navbarPage(
       ),
       br(),
       h3("How to Use"),
-      p("Navigate to the 'Data Exploration' tab to view various visualizations of the data."),
+      p("Navigate to the 'Data Exploration' and 'Additional Plots' tabs to view various visualizations of the data."),
       br(),
       h3("Dataset Summary"),
       verbatimTextOutput("data_summary")
@@ -62,8 +62,15 @@ ui <- navbarPage(
           h4("Plot 2: Presence/Absence by ID"),
           plotOutput("plot2")
         )
-      ),
-      
+      )
+    )
+  ),
+  
+  # Additional Plots Page
+  tabPanel(
+    "Additional Plots",
+    fluidPage(
+      h2("Additional Data Visualizations"),
       br(),
       
       fluidRow(
