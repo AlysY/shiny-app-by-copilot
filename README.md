@@ -50,14 +50,14 @@ sudo apt-get install r-cran-shiny r-cran-ggplot2 r-cran-dplyr
 To run the app:
 
 ```r
-# In R console
-shiny::runApp("app.R")
+# In R console from the app directory
+shiny::runApp()
 ```
 
 Or from command line:
 
 ```bash
-R -e "shiny::runApp('app.R')"
+R -e "shiny::runApp()"
 ```
 
 The app will open in your default web browser.
